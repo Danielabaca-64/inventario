@@ -4,7 +4,6 @@ import util.Conexion;
 import vista.VentanaPrincipal;
 
 import javax.swing.*;
-import java.sql.SQLException;
 
 /**
  * Punto de entrada de InventarioTech.
@@ -31,14 +30,13 @@ public class Main {
 
         // 2. Verificar la conexión a MySQL antes de abrir la UI
        try {
-    java.sql.Connection c =
-        java.sql.DriverManager.getConnection(
-            "jdbc:mysql://localhost:3306/inventariotech?useSSL=false&allowPublicKeyRetrieval=true",
-            "inventario",
-            "123456"
-        );
+  java.sql.DriverManager.getConnection(
+    "jdbc:mysql://localhost:3306/inventariotech?useSSL=false&allowPublicKeyRetrieval=true",
+    "inventario",
+    "123456"
+);
 
-    System.out.println("CONEXION EXITOSA");
+System.out.println("CONEXION EXITOSA");
 } catch (Exception e) {
     e.printStackTrace();
 }
