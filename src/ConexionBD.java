@@ -8,7 +8,7 @@ public class ConexionBD {
         Connection con = null;
 
         String host = "localhost";
-        int puerto = 3306;
+        int puerto = 3305;
         String usuario = "root";
         String contrasena = "";
         String nombreBD = "inventariotech";
